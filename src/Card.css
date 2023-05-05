@@ -1,0 +1,19 @@
+.Card {
+  background-color: chartreuse;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  margin: 1%;
+}
+
+.Card__stats {
+  width: 100%;
+  text-align: center;
+  background-color: hsl(235, 46%, 20%);
+  color: white;
+  border-radius: 10px;
+
+  /* font-family: [Rubik](https://fonts.google.com/specimen/Rubik); */
+}
