@@ -7,12 +7,14 @@ function App() {
     <div className="App">
       <div className="CardDeck">
         <TitleCard />
-        <Card activity="Work" time={32} history="Last Week - 36hrs" />
-        <Card activity="Play" time={10} history="Last Week - 36hrs" />
-        <Card activity="Play" time={10} history="Last Week - 36hrs" />
-        <Card activity="Play" time={10} history="Last Week - 36hrs" />
-        <Card activity="Play" time={10} history="Last Week - 36hrs" />
-        <Card activity="Play" time={10} history="Last Week - 36hrs" />
+        <div className="timeCards">
+          <Card activity="Work" time={32} history="Last Week - 36hrs" />
+          <Card activity="Play" time={10} history="Last Week - 36hrs" />
+          <Card activity="Play" time={10} history="Last Week - 36hrs" />
+          <Card activity="Play" time={10} history="Last Week - 36hrs" />
+          <Card activity="Play" time={10} history="Last Week - 36hrs" />
+          <Card activity="Play" time={10} history="Last Week - 36hrs" />
+        </div>
       </div>
     </div>
   );
