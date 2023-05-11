@@ -6,10 +6,13 @@
   background-color: hsl(226, 43%, 10%);
   font-family: "Rubik", sans-serif;
   color: White;
+  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: center;
+  align-items: center;
 }
 
 .CardDeck {
-  width: 1100px;
+  width: 1050px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -17,7 +20,7 @@
 }
 
 .timeCards {
-  width: 800px;
+  width: 700px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
