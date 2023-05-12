@@ -17,3 +17,8 @@
 
   /* font-family: [Rubik](https://fonts.google.com/specimen/Rubik); */
 }
+
+.icon {
+  margin-bottom: 130px;
+  display: flex;
+}
