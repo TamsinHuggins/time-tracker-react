@@ -14,4 +14,13 @@
   border-radius: 10px;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 30%;
+  padding-top: 10%;
+  padding-left: 10%;
+  border: 10px solid white;
 }

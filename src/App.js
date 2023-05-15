@@ -3,14 +3,22 @@ import Card from "./Card";
 import TitleCard from "./TitleCard";
 import data from "./data.json";
 
-// - Light red (work): hsl(15, 100%, 70%)
-// - Soft blue (play): hsl(195, 74%, 62%)
-// - Light red (study): hsl(348, 100%, 68%)
-// - Lime green (exercise): hsl(145, 58%, 55%)
-// - Violet (social): hsl(264, 64%, 52%)
-// - Soft orange (self care): hsl(43, 84%, 65%)
+console.log(data.length);
 
 function App() {
+  const [work, play, study, exer, soci, care] = data;
+
+  const getHoursSpent = (activity) => {
+    // given the activity, give the string displaying time spent on that activity
+    const hoursSpent = `${activity.timeframes.weekly.current}hrs`;
+    return hoursSpent;
+  };
+
+  const getHoursSpentPrev = (activity) => {
+    const hoursSpent = `Last Week - ${activity.timeframes.weekly.previous}hrs`;
+    return hoursSpent;
+  };
+
   return (
     <div className="App">
       <div className="CardDeck">
@@ -18,41 +26,39 @@ function App() {
         <div className="timeCards">
           <Card
             style={{ backgroundColor: "hsl(15, 100%, 70%)" }}
-            activity={data[0].title}
-            time={data[0].timeframes.weekly.current}
-            history={
-              "Last Week - " + data[0].timeframes.weekly.previous + "hrs"
-            }
+            activity={work.title}
+            time={getHoursSpent(work)}
+            history={getHoursSpentPrev(work)}
           />
           <Card
             style={{ backgroundColor: "hsl(195, 74%, 62%)" }}
-            activity={data[1].title}
-            time={10}
-            history="Last Week - 36hrs"
+            activity={play.title}
+            time={getHoursSpent(play)}
+            history={getHoursSpentPrev(play)}
           />
           <Card
             style={{ backgroundColor: "hsl(348, 100%, 68%)" }}
-            activity={data[2].title}
-            time={10}
-            history="Last Week - 36hrs"
+            activity={study.title}
+            time={getHoursSpent(study)}
+            history={getHoursSpentPrev(study)}
           />
           <Card
             style={{ backgroundColor: "hsl(145, 58%, 55%)" }}
-            activity={data[3].title}
-            time={10}
-            history="Last Week - 36hrs"
+            activity={exer.title}
+            time={getHoursSpent(exer)}
+            history={getHoursSpentPrev(exer)}
           />
           <Card
             style={{ backgroundColor: "hsl(264, 64%, 52%)" }}
-            activity={data[4].title}
-            time={10}
-            history="Last Week - 36hrs"
+            activity={soci.title}
+            time={getHoursSpent(soci)}
+            history={getHoursSpentPrev(soci)}
           />
           <Card
             style={{ backgroundColor: "hsl(43, 84%, 65%)" }}
-            activity={data[5].title}
-            time={10}
-            history="Last Week - 36hrs"
+            activity={care.title}
+            time={getHoursSpent(care)}
+            history={getHoursSpentPrev(care)}
           />
         </div>
       </div>

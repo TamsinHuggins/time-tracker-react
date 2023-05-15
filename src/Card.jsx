@@ -7,7 +7,7 @@ console.log(WorkLogo);
 const Card = (props) => {
   return (
     <div style={props.style} className="Card">
-      <WorkLogo className="icon" />
+      {/* <WorkLogo id="icon" /> */}
       <div className="Card__stats">
         <h3>{props.activity}</h3>
         <h1>{props.time}</h1>
