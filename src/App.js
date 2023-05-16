@@ -12,15 +12,29 @@ import careLogo from "./images/icon-self-care.svg";
 function App() {
   const [work, play, study, exer, soci, care] = data;
 
-  const getThisWeekHours = (activity) => {
-    // given the activity, give the string displaying time spent on that activity
-    const hoursSpent = `${activity.timeframes.weekly.current}hrs`;
-    return hoursSpent;
-  };
+  let timeFrame = "weekly";
 
-  const getLastWeekHours = (activity) => {
-    const hoursSpent = `Last Week - ${activity.timeframes.weekly.previous}hrs`;
-    return hoursSpent;
+  const getHours = (activity, timeFrame) => {
+    /**
+     *  given an activity and a timeFrame (daily, weekly or monthly), return an array. Hours spent this timFrame at position 0, hours spent last timeFrame at position 1
+     * @param {Object} activity
+     * @param {String} timeFrame
+     * @return {Array} [thisHours, prevHours]
+     *      */
+
+    if (timeFrame === "daily") {
+      let thisHours = `${activity.timeframes.daily.current}hrs`;
+      let prevHours = `Last Week - ${activity.timeframes.daily.previous}hrs`;
+      return [thisHours, prevHours];
+    } else if (timeFrame === "weekly") {
+      let thisHours = `${activity.timeframes.weekly.current}hrs`;
+      let prevHours = `Last Week - ${activity.timeframes.weekly.previous}hrs`;
+      return [thisHours, prevHours];
+    } else {
+      let thisHours = `${activity.timeframes.monthly.current}hrs`;
+      let prevHours = `Last Week - ${activity.timeframes.monthly.previous}hrs`;
+      return [thisHours, prevHours];
+    }
   };
 
   return (
@@ -34,8 +48,8 @@ function App() {
               backgroundImage: `url(${workLogo})`,
             }}
             activity={work.title}
-            time={getThisWeekHours(work)}
-            history={getLastWeekHours(work)}
+            time={getHours(work, timeFrame)[0]}
+            history={getHours(work, timeFrame)[1]}
           />
           <Card
             style={{
@@ -43,8 +57,8 @@ function App() {
               backgroundImage: `url(${playLogo})`,
             }}
             activity={play.title}
-            time={getThisWeekHours(play)}
-            history={getLastWeekHours(play)}
+            time={getHours(play, timeFrame)[0]}
+            history={getHours(play, timeFrame)[1]}
           />
           <Card
             style={{
@@ -52,8 +66,8 @@ function App() {
               backgroundImage: `url(${studyLogo})`,
             }}
             activity={study.title}
-            time={getThisWeekHours(study)}
-            history={getLastWeekHours(study)}
+            time={getHours(study, timeFrame)[0]}
+            history={getHours(study, timeFrame)[1]}
           />
           <Card
             style={{
@@ -61,8 +75,8 @@ function App() {
               backgroundImage: `url(${exerLogo})`,
             }}
             activity={exer.title}
-            time={getThisWeekHours(exer)}
-            history={getLastWeekHours(exer)}
+            time={getHours(exer, timeFrame)[0]}
+            history={getHours(exer, timeFrame)[1]}
           />
           <Card
             style={{
@@ -70,8 +84,8 @@ function App() {
               backgroundImage: `url(${sociLogo})`,
             }}
             activity={soci.title}
-            time={getThisWeekHours(soci)}
-            history={getLastWeekHours(soci)}
+            time={getHours(soci, timeFrame)[0]}
+            history={getHours(soci, timeFrame)[1]}
           />
           <Card
             style={{
@@ -79,8 +93,8 @@ function App() {
               backgroundImage: `url(${careLogo})`,
             }}
             activity={care.title}
-            time={getThisWeekHours(care)}
-            history={getLastWeekHours(care)}
+            time={getHours(care, timeFrame)[0]}
+            history={getHours(care, timeFrame)[1]}
           />
         </div>
       </div>
