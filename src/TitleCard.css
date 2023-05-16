@@ -1,10 +1,14 @@
 .titleCard {
   background-color: hsl(235, 46%, 20%);
-  height: auto;
+  height: 400px;
   width: 200px;
   border-radius: 12px;
   margin: 1.5%;
   margin-top: 2%;
+}
+
+.titleCard__text {
+  padding-left: 10%;
 }
 
 .reportFor {
@@ -18,10 +22,15 @@
   flex-direction: column;
 }
 
+.jeremyHolder {
+  padding-left: 10%;
+  /* padding: 10%; */
+}
+
 .profilePic {
   border-radius: 50%;
-  width: 30%;
-  padding-top: 10%;
-  padding-left: 10%;
-  border: 10px solid white;
+  border: 3px solid white;
+  width: 35%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
