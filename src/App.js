@@ -31,7 +31,7 @@ function App() {
 
     if (timeFrame === "daily") {
       let thisHours = `${activity.timeframes.daily.current}hrs`;
-      let prevHours = `Last Week - ${activity.timeframes.daily.previous}hrs`;
+      let prevHours = `Yesterday - ${activity.timeframes.daily.previous}hrs`;
       return [thisHours, prevHours];
     } else if (timeFrame === "weekly") {
       let thisHours = `${activity.timeframes.weekly.current}hrs`;
@@ -39,7 +39,7 @@ function App() {
       return [thisHours, prevHours];
     } else {
       let thisHours = `${activity.timeframes.monthly.current}hrs`;
-      let prevHours = `Last Week - ${activity.timeframes.monthly.previous}hrs`;
+      let prevHours = `Last Month - ${activity.timeframes.monthly.previous}hrs`;
       return [thisHours, prevHours];
     }
   };
@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <div className="CardDeck">
-        <TitleCard setFrame={setFrame} />
+        <TitleCard setFrame={setFrame} timeFrame={timeFrame} />
         <div className="timeCards">
           <Card
             style={{
