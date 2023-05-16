@@ -12,7 +12,8 @@
 }
 
 .CardDeck {
-  width: 930px;
+  width: 980px;
+  /* height: 200px; */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -20,9 +21,33 @@
 }
 
 .timeCards {
-  width: 700px;
+  width: 750px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+  margin-top: 10%;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 0;
+  margin-top: 5%;
+}
+
+h3 {
+  font-size: 14px;
+  margin: 0;
+  margin-top: 10%;
+}
+
+h5 {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 3%;
 }
