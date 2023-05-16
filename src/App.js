@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Card from "./Card";
 import TitleCard from "./TitleCard";
@@ -12,7 +13,13 @@ import careLogo from "./images/icon-self-care.svg";
 function App() {
   const [work, play, study, exer, soci, care] = data;
 
-  let timeFrame = "weekly";
+  // useState with timeFrame set to weekly
+
+  const [timeFrame, setTimeFrame] = useState("weekly");
+
+  const setFrame = (newTimeFrame) => {
+    setTimeFrame(newTimeFrame);
+  };
 
   const getHours = (activity, timeFrame) => {
     /**
@@ -40,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <div className="CardDeck">
-        <TitleCard />
+        <TitleCard setFrame={setFrame} />
         <div className="timeCards">
           <Card
             style={{
