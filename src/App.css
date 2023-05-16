@@ -12,7 +12,7 @@
 }
 
 .CardDeck {
-  width: 1050px;
+  width: 930px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

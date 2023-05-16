@@ -2,8 +2,9 @@
   background-color: hsl(235, 46%, 20%);
   height: auto;
   width: 200px;
-  border-radius: 10px;
-  margin: 1%;
+  border-radius: 12px;
+  margin: 1.5%;
+  margin-top: 2%;
 }
 
 .reportFor {
@@ -23,12 +24,4 @@
   padding-top: 10%;
   padding-left: 10%;
   border: 10px solid white;
-}
-
-h1 {
-  padding-left: 10%;
-}
-
-h5 {
-  padding-left: 10%;
 }
