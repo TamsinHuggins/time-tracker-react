@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import "./App.css";
 import Card from "./Card";
 import TitleCard from "./TitleCard";
@@ -12,7 +13,13 @@ import careLogo from "./images/icon-self-care.svg";
 function App() {
   const [work, play, study, exer, soci, care] = data;
 
-  let timeFrame = "weekly";
+  // useState with timeFrame set to weekly
+
+  const [timeFrame, setTimeFrame] = useState("weekly");
+
+  const setFrame = (newTimeFrame) => {
+    setTimeFrame(newTimeFrame);
+  };
 
   const getHours = (activity, timeFrame) => {
     /**
@@ -24,7 +31,7 @@ function App() {
 
     if (timeFrame === "daily") {
       let thisHours = `${activity.timeframes.daily.current}hrs`;
-      let prevHours = `Last Week - ${activity.timeframes.daily.previous}hrs`;
+      let prevHours = `Yesterday - ${activity.timeframes.daily.previous}hrs`;
       return [thisHours, prevHours];
     } else if (timeFrame === "weekly") {
       let thisHours = `${activity.timeframes.weekly.current}hrs`;
@@ -32,7 +39,7 @@ function App() {
       return [thisHours, prevHours];
     } else {
       let thisHours = `${activity.timeframes.monthly.current}hrs`;
-      let prevHours = `Last Week - ${activity.timeframes.monthly.previous}hrs`;
+      let prevHours = `Last Month - ${activity.timeframes.monthly.previous}hrs`;
       return [thisHours, prevHours];
     }
   };
@@ -40,7 +47,7 @@ function App() {
   return (
     <div className="App">
       <div className="CardDeck">
-        <TitleCard />
+        <TitleCard setFrame={setFrame} timeFrame={timeFrame} />
         <div className="timeCards">
           <Card
             style={{

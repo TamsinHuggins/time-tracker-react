@@ -7,8 +7,21 @@
   margin-top: 2%;
 }
 
-.titleCard__text {
+.titleCard__buttons {
   padding-left: 10%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.Button {
+  background-color: hsl(235, 46%, 20%);
+  color: aliceblue;
+  border: none;
+  height: 30px;
+  width: 100%;
+  text-align: left;
 }
 
 .reportFor {
@@ -22,8 +35,9 @@
   flex-direction: column;
 }
 
-.jeremyHolder {
+.reportFor__content {
   padding-left: 10%;
+
   /* padding: 10%; */
 }
 
