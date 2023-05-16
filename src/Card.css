@@ -1,19 +1,36 @@
 .Card {
-  /* background-color: chartreuse; */
+  /*background-color: chartreuse; */
+  /* background-image: url("./images/icon-work.svg"); */
+  background-repeat: no-repeat;
+  background-position: right top;
   width: 200px;
   height: 200px;
   border-radius: 10px;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   margin: 1%;
 }
 
 .Card__stats {
   width: 100%;
-  text-align: center;
+  height: 80%;
+  text-align: left;
   background-color: hsl(235, 46%, 20%);
   color: white;
-  border-radius: 10px;
+  border-radius: 9px;
+  margin-top: 20%;
 
   /* font-family: [Rubik](https://fonts.google.com/specimen/Rubik); */
+}
+
+h1 {
+  padding-left: 10%;
+}
+
+h5 {
+  padding-left: 10%;
+}
+
+h3 {
+  padding-left: 10%;
 }
