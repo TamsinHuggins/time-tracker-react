@@ -1,7 +1,7 @@
 .Card {
   background-repeat: no-repeat;
   background-position: 90% -3%;
-  background-size: 27%;
+  background-size: 50px;
   width: 200px;
   height: 180px;
   border-radius: 12px;
@@ -16,6 +16,13 @@
   background-color: hsl(235, 46%, 20%);
   color: white;
   border-radius: 10px;
-  margin-top: 18%;
+  margin-top: 35px;
   padding-left: 10%;
+}
+
+@media (max-width: 500px) {
+  .Card {
+    width: 90%;
+    height: 180px;
+  }
 }

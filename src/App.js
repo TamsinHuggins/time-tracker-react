@@ -47,26 +47,32 @@ function App() {
   return (
     <div className="App">
       <div className="CardDeck">
-        <TitleCard setFrame={setFrame} timeFrame={timeFrame} />
+        <div className="FirstThreeCards">
+          <div className="TitleCardContainer">
+            <TitleCard setFrame={setFrame} timeFrame={timeFrame} />
+          </div>
+          <div className="timeCards" id="titleCardSisters">
+            <Card
+              style={{
+                backgroundColor: "hsl(15, 100%, 70%)",
+                backgroundImage: `url(${workLogo})`,
+              }}
+              activity={work.title}
+              time={getHours(work, timeFrame)[0]}
+              history={getHours(work, timeFrame)[1]}
+            />
+            <Card
+              style={{
+                backgroundColor: "hsl(195, 74%, 62%)",
+                backgroundImage: `url(${playLogo})`,
+              }}
+              activity={play.title}
+              time={getHours(play, timeFrame)[0]}
+              history={getHours(play, timeFrame)[1]}
+            />
+          </div>
+        </div>
         <div className="timeCards">
-          <Card
-            style={{
-              backgroundColor: "hsl(15, 100%, 70%)",
-              backgroundImage: `url(${workLogo})`,
-            }}
-            activity={work.title}
-            time={getHours(work, timeFrame)[0]}
-            history={getHours(work, timeFrame)[1]}
-          />
-          <Card
-            style={{
-              backgroundColor: "hsl(195, 74%, 62%)",
-              backgroundImage: `url(${playLogo})`,
-            }}
-            activity={play.title}
-            time={getHours(play, timeFrame)[0]}
-            history={getHours(play, timeFrame)[1]}
-          />
           <Card
             style={{
               backgroundColor: "hsl(348, 100%, 68%)",

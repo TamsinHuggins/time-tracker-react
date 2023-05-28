@@ -43,3 +43,18 @@
   margin-top: 15%;
   margin-bottom: 15%;
 }
+
+@media (max-width: 500px) {
+  .titleCard {
+    width: 90%;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 501px) {
+  .titleCard {
+    background-color: hsl(235, 46%, 20%);
+    height: 400px;
+    width: 200px;
+    border-radius: 12px;
+  }
+}
