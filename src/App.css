@@ -1,31 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Rubik:wght@300&display=swap");
 
 .App {
-  height: 100vh;
-  width: 100vw;
   background-color: hsl(226, 43%, 10%);
   font-family: "Rubik", sans-serif;
   color: White;
-  display: flex; /* NEW, Spec - Firefox, Chrome, Opera */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .CardDeck {
-  width: 980px;
-  /* height: 200px; */
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: space-around;
+  justify-content: space-around;
 }
 
 .timeCards {
-  width: 750px;
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-content: space-around;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
+@media (max-width: 550px) {
+  .App {
+    height: 1700px;
+    width: 100vw;
+    background-color: hsl(226, 43%, 10%);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .CardDeck {
+    height: 98%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .timeCards {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+@media (min-width: 950px) {
+  .CardDeck {
+    width: 950px;
+  }
 }
 
 h1 {
