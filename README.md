@@ -1,16 +1,21 @@
 # Time Tracker
 
+![desktop-preview](https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/63a80b95-089b-477a-813c-1df877b8be74)
+
 ### Overview
 
 Time Tracker is a portfolio application which I built to develop and demonstrate my front end web development skills in React.js, including building from a design, creating interactive custom React components, and implementing device-responsive styling for desktop, phone, and tablet. Time Tracker is a user interface which allows the user to visualise their time spent on different activities (e.g. work, exercise, social), over different time scales (e.g. daily, weekly, monthly). This interface would make up one part of a larger, data-driven application: I have built the final part of this data pipeline, which displays an interactive breakdown of the user's personal statistics.
 
+I obtained the design for Time Tracker, as shown in the image above, from FrontEndMentor.com. From the same page I obtained assets for the project such as a JSON file containing the time data to display, and styling content such as hexkeys for the CSS colours and images for the card backgrounds.
+
 ### What does Time Tracker do?
-Time Tracker displays the number of hours the user has spent on different activities over the past day, month or week. The app has buttons which allow the user to select the timescale in which they want to view their data. Time Tracker adapts to the size of the user's view window, adaptively changing its layout depending on whether the viewer is viewing on a desktop, tablet or phone screen.
+Time Tracker displays the number of hours the user has spent on different activities over the past day, month or week. The app has buttons which allow the user to select the timescale in which they want to view their data. Time Tracker adapts to the size of the user's view window, changing its layout depending on whether the viewer is using a desktop, tablet or phone screen.
 
 ### Technologies and Skills Used to Build Time Tracker
 
-React.js. JavaScript. Vanilla CSS. 
+Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, such that you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a React-specific thing called props. When I initially viewed the design for Time Tracker, I noticed immediately that there are 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are identical in their size and layout. Vanilla CSS. 
 Media Queries
+
 
 ### Challenges associated with building Time Tracker
 
