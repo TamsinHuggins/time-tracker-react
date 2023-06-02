@@ -13,8 +13,12 @@ Time Tracker displays the number of hours the user has spent on different activi
 
 ### Technologies and Skills Used to Build Time Tracker
 
-Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, such that you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a React-specific thing called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are identical in their size, shape, structure, and other aspects of their styling. I therefore itentified these as a good candidate for encoding as a single react component, repeated 6 times , with the highlight color, background image and data passed in through props. Vanilla CSS. 
+Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, such that you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a React-specific thing called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are identical in their size, shape, structure, and other aspects of their styling. I itentified these 'cards' as a good candidate for encoding as a single react component, repeated 6 times, with the highlight color, background image and data passed in through props. 
+
+Vanilla CSS. 
+
 Media Queries
+
 
 
 ### Challenges associated with building Time Tracker
