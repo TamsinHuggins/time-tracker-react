@@ -15,13 +15,11 @@ Time Tracker displays the number of hours the user has spent on different activi
 
 Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, so you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a feature of React called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are From the design, I identified six time 'cards', identical in structure but differing in colour, background image and data displayed, making them ideal candidates for a reusable React component using props.
 
-Vanilla CSS. 
-
-Media Queries
-
-
+Time Tracker was styled with vanilla CSS, to showcase vanilla CSS skills, whereas I will use Tailwind for future portfolio projects. I used CSS media queries to allow Time Tracker to adapt its layout to suit the device which it is viewed on.
 
 ### Challenges associated with building Time Tracker
+
+The biggest challenge which I overcame to complete the Time Tracker project was using a combination of React props and React hooks in order to pass state information through component heirarchies. The buttons on the left hand of the screen can be clicked to change the time scale on which to display the data. In response to a button click, information needed to be sent from this card down to all of the other card components...
 
 	- figuring out where state should be stored and passed down through 		components
 
