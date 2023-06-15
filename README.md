@@ -13,19 +13,18 @@ Time Tracker displays the number of hours the user has spent on different activi
 
 ### Technologies and Skills Used to Build Time Tracker
 
-Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, so you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a feature of React called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are From the design, I identified six time 'cards', identical in structure but differing in colour, background image and data displayed, making them ideal candidates for a reusable React component using props.
+Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, so you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a feature of React called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are From the design, I identified six 'Time Cards', identical in structure but differing in colour, background image and data displayed, making them ideal candidates for a reusable React component using props.
 
 Time Tracker was styled with vanilla CSS, to showcase vanilla CSS skills, whereas I will use Tailwind for future portfolio projects. I used CSS media queries to allow Time Tracker to adapt its layout to suit the device which it is viewed on.
 
 ### Challenges associated with building Time Tracker
 
-The biggest challenge which I overcame to complete the Time Tracker project was using a combination of React props and React hooks in order to pass state information through component heirarchies. The buttons on the left hand of the screen can be clicked to change the time scale on which to display the data. In response to a button click, information needed to be sent from this card down to all of the other card components...
+Adding interactivity to TimeTracker posed challenges in determining which components would use state and how event information, such as user clicks, would be passed between components to change the state. In this case, the state represents the timescale for displaying time statistics (daily, monthly, or weekly). To address this, I utilized the useState hook in the App component to hold the state and passed state information down to the Time Cards through props. The Title Card component also received the state information and the function for changing the state via props, enabling the buttons to modify the state and allowing users to switch between different stats by clicking.
 
-	- figuring out where state should be stored and passed down through 		components
+Certain decisions proved difficult when there was no obvious optimal solution. Initially, I was uncertain whether to hard-code the width and height of the cards or make them adaptable to the view window's size. Hard-coded sizes might result in small cards on large screens, while adaptive sizes would require minimum size rules or adaptive font sizes to prevent text overflow. Ultimately, I chose to give the cards a fixed size but maintain flexibility in their arrangement based on the view window, whether it be in 2 rows, 4 rows, or one column. This compromise acknowledges that the cards might appear small on very large screens. This experience taught me the importance of having some fixed-size elements to enhance the simplicity and predictability of an interface.
 
-	- making design decisions (e.g. multiple ways to apply CSS to achieve 		the design layout. Example: hardcode the <Card> width or make it 			scaled
+Another challenge I encountered was making quick decisions when multiple valid approaches existed to achieve the same outcome. For instance, I could have used React image components to introduce background images for the Time Cards, but I found it faster to utilize CSS background images. While both JavaScript and CSS offer redundant options, there is a trade-off between finding the optimal way to implement something and the quickest approach. This consideration becomes especially crucial when design choices made early in the project may lead to subsequent complications. Due to overlooking the orientation of the Time Card components for tablet view initially, I had to restructure the hierarchy of CSS classes and HTML divs to accommodate the changes. I had to break the code first in order to improve its flexibility. This experience highlighted how design decisions can become significantly more complex when developing larger applications, as early design choices may necessitate substantial code restructuring in the future.
 
-	- when should something be a React component?
 
 ### How to Install and Run Time Tracker
 
@@ -35,6 +34,3 @@ The biggest challenge which I overcame to complete the Time Tracker project was 
 
 	- npm start
 
-
-
-License 
