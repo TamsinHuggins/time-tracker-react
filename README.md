@@ -1,6 +1,6 @@
 # Time Tracker
-
-![desktop-preview](https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/63a80b95-089b-477a-813c-1df877b8be74)
+Desktop view:
+![Screenshot 2023-06-15 184438](https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/32652160-0732-4ba0-a882-7ef4e0d56c36)
 
 ### Overview
 
@@ -8,8 +8,15 @@ Time Tracker is a portfolio application which I built to develop and demonstrate
 
 I obtained the design and assets for the project from [FrontEndMentor.io](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
+
 ### What does Time Tracker do?
 Time Tracker displays the number of hours the user has spent on different activities over the past day, month or week. The app has buttons which allow the user to select the timescale in which they want to view their data. Time Tracker adapts to the size of the user's view window, changing its layout depending on whether the viewer is using a desktop, tablet or phone screen.
+
+Time Tracker, as viewed on a tablet screen, displaying monthly stats (left) and as viewed on a phone screen, displaying weekly stats (right):
+
+<img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/b25115cf-a831-4be4-bea6-fbb85ad1c8b7) height="600"> <img src=
+https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-9704-4801-b535-5e1b2277b88f height="600"> <img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/7fb72c2f-0e21-4e06-8e55-14f0c055b4d5 height="600">
+
 
 ### Technologies and Skills Used to Build Time Tracker
 
