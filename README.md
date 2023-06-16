@@ -39,6 +39,7 @@ Clone the repo, install dependencies and start the app.
 
 ``` 
 git clone https://github.com/TamsinHuggins/time-tracker-react.git
+cd time-tracker-react
 npm i
 npm start
 ```
