@@ -20,7 +20,7 @@ https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-970
 
 ### Technologies and Skills Used to Build Time Tracker
 
-Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, so you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a feature of React called props. When first viewing the design for Time Tracker, I noticed 6 'time cards', which differ in their highlight colour, background images, and data displayed, but are From the design, I identified six 'Time Cards', identical in structure but differing in colour, background image and data displayed, making them ideal candidates for a reusable React component using props.
+Time Tracker was coded in React.js, which is a front end framework that couples JavaScript (JS) and HTML tightly, so you can write HTML within JS scripts. I chose React because it allows you to create custom reusable components that can each be tailored using a feature of React called props. From the design, I identified six 'Time Cards', identical in structure but differing in colour, background image and data displayed, making them ideal candidates for a reusable React component using props.
 
 Time Tracker was styled with vanilla CSS, to showcase vanilla CSS skills, whereas I will use Tailwind for future portfolio projects. I used CSS media queries to allow Time Tracker to adapt its layout to suit the device which it is viewed on.
 
