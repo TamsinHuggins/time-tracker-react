@@ -14,8 +14,10 @@ Time Tracker displays the number of hours the user has spent on different activi
 
 Time Tracker, as viewed on a tablet screen, displaying monthly stats (left) and as viewed on a phone screen, displaying weekly stats (right):
 
-<img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/b25115cf-a831-4be4-bea6-fbb85ad1c8b7) height="600"> <img src=
-https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-9704-4801-b535-5e1b2277b88f height="600"> <img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/7fb72c2f-0e21-4e06-8e55-14f0c055b4d5 height="600">
+<img src=
+https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-9704-4801-b535-5e1b2277b88f height="600"> <img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/b25115cf-a831-4be4-bea6-fbb85ad1c8b7) height="600"> <img src=
+https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-9704-4801-b535-5e1b2277b88f height="600"> <img src=https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/7fb72c2f-0e21-4e06-8e55-14f0c055b4d5 height="600"> <img src=
+https://github.com/TamsinHuggins/time-tracker-react/assets/32196191/3e4cfee7-9704-4801-b535-5e1b2277b88f height="600">
 
 
 ### Technologies and Skills Used to Build Time Tracker
