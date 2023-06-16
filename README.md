@@ -35,9 +35,11 @@ Another challenge I encountered was making quick decisions when multiple valid a
 
 ### How to Install and Run Time Tracker
 
-	- clone the repo `git clone <link-to-repository>`
+Clone the repo, install dependencies and start the app.
 
-	- run `npm I` or `npm install` (they’re the same command) to install the packages needed to run your app
-
-	- npm start
+``` 
+git clone https://github.com/TamsinHuggins/time-tracker-react.git
+npm i
+npm start
+```
 
